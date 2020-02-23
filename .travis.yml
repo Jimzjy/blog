@@ -12,4 +12,4 @@ deploy:
   github_token: $GH_SEC_KEY
   keep_history: true
   on:
-    branch: gh-pages
+    branch: master
