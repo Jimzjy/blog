@@ -9,7 +9,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: blog/.vuepress/dist
-  github_token: GH_SEC_KEY
+  github_token: $GH_SEC_KEY
   keep_history: true
   on:
     branch: gh-pages
