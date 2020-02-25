@@ -12,6 +12,10 @@ module.exports = {
         text: 'Memo',
         link: '/tag/memo/',
       },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/Jimzjy/blog'
+      }
     ]
   },
 }
