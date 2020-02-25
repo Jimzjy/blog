@@ -8,7 +8,7 @@ tags:
 
 ## EventLoop
 
-![event-loop](/node/event-loop.png)
+<img :src="$withBase('/node/event-loop.png')"/>
 
 1. 执行 `定时器回调` 的阶段。检查定时器，如果到了时间，就执行回调。这些定时器就是setTimeout、setInterval。这个阶段暂且叫它`timer`。
 2. 轮询(英文叫`poll`)阶段。因为在node代码中难免会有异步操作，比如文件I/O，网络I/O等等，那么当这些异步操作做完了，就会来通知JS主线程，怎么通知呢？就是通过'data'、 'connect'等事件使得事件循环到达 `poll` 阶段。到达了这个阶段后:

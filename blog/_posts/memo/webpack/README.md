@@ -8,7 +8,7 @@ tags:
 
 ## webpack工作原理
 
-![theory](/webpack/theory.png)
+<img :src="$withBase('/webpack/theory.png')"/>
 
 - 首先，webpack 会读取项目中由开发者定义的 webpack.config.js 配置文件，或者从 shell 语句中获得必要的参数。这是 webpack 内部接收业务配置信息的方式。这就完成了配置读取的初步工作。
 - 接着，实例化所需 webpack 插件，在 webpack 事件流上挂载插件钩子，这样在合适的构建过程中，插件具备了改动产出结果的能力。

@@ -65,7 +65,7 @@ index.html
 
 ### 原型
 
-![proto](/js/proto.png)
+<img :src="$withBase('/js/proto.png')"/>
 
 - `Object` 是所有对象的爸爸，所有对象都可以通过 `__proto__` 找到它
 - `Function` 是所有函数的爸爸，所有函数都可以通过 `__proto__` 找到它

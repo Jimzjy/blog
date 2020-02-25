@@ -20,7 +20,7 @@ tags:
 4. 绘制 RenderObject 树 （paint）,绘制页面的像素信息
 5. 浏览器主进程将默认的图层和复合图层交给 GPU 进程,GPU 进程再将各个图层合成（composite）,最后显示出页面
 
-![执行过程](/broswer/run.png)
+<img :src="$withBase('/broswer/run.png')" alt="run"/>
 
 ### 浏览器线程
 
@@ -177,7 +177,7 @@ tags:
 
 浏览器的资源缓存分为 from disk cache 和 from memory cache 两类。当首次访问网页时，资源文件被缓存在内存中，同时也会在本地磁盘中保留一份副本。当用户刷新页面，如果缓存的资源没有过期，那么直接从内存中读取并加载。当用户关闭页面后，当前页面缓存在内存中的资源被清空。当用户再一次访问页面时，如果资源文件的缓存没有过期，那么将从本地磁盘进行加载并再次缓存到内存之中。
 
-![缓存策略](/broswer/cache.png)
+<img :src="$withBase('/broswer/cache.png')"/>
 
 **强缓存**
 
@@ -267,7 +267,7 @@ Etag 的生成策略，实际上规范并没有强制说明，这就取决于各
 - 当用户 Ctrl + F5 强制刷新网页时，浏览器直接从服务器加载，跳过强缓存和协商缓存
 - 当用户仅仅敲击 F5 刷新网页时，跳过强缓存，但是仍然会进行协商缓存过程
 
-![缓存和浏览器操作](/broswer/cache-broswer.png)
+<img :src="$withBase('/broswer/cache-broswer.png')"/>
 
 **如何禁止浏览器缓存静态资源**
 
@@ -299,7 +299,7 @@ Etag 的生成策略，实际上规范并没有强制说明，这就取决于各
 
 ### 渲染层合并
 
-![渲染层合并](/broswer/render-layer.png)
+<img :src="$withBase('/broswer/render-layer.png')"/>
 
 RenderLayers 渲染层,这是负责对应 DOM 子树。
 

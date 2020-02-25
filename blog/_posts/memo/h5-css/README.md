@@ -225,7 +225,7 @@ function messageHandler(e){
 
 12.Web Storage API：sessionStorage(保存在session中，浏览器关闭，数据消失)、localStorage(保存在客户端本地，除非手动删除，否则一直保存)
 
-![大小限制](/h5-css/storage-size.png)
+<img :src="$withBase('/h5-css/storage-size.png')"/>
 
 ### CSS3新特性
 
@@ -287,7 +287,7 @@ resize, box-sizing, outline-offset
 
 从实用角度来说,首先把所有脚本都丢到 </body> 之前是最佳实践,因为对于旧浏览器来说这是唯一的优化选择,此法可保证非脚本的其他一切元素能够以最快的速度得到加载和解析。
 
-![defer-async](/h5-css/defer-async.png)
+<img :src="$withBase('/h5-css/defer-async.png')"/>
 
 ### meta
 
@@ -410,7 +410,7 @@ transform:scale()
       <span>333</span>
     </div>
 
-![ifc](/h5-css/ifc.png)
+<img :src="$withBase('/h5-css/ifc.png')"/>
 
 ### 文本截断
 
@@ -429,7 +429,7 @@ transform:scale()
 
 ### inline-block/inline 间隙问题
 
-![inline间隙问题](/h5-css/inline.png)
+<img :src="$withBase('/h5-css/inline.png')"/>
 
     <div class="wrapper">
       <div class="inner">111</div>

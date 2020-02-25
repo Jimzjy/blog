@@ -265,7 +265,7 @@ Access-Control-Allow-Credentials
 
 **三次握手**
 
-![TCP连接](/network/tcp-connect.png)
+<img :src="$withBase('/network/tcp-connect.png')"/>
 
 第一次客户端发送
 
@@ -277,7 +277,7 @@ Access-Control-Allow-Credentials
 
 **四次挥手**
 
-![TCP关闭](/network/tcp-close.png)
+<img :src="$withBase('/network/tcp-close.png')"/>
 
 第一次客户端发送
 
@@ -358,7 +358,7 @@ Maximum Segment Lifetime, 他是任何报文在网络上存在的最长时间，
 
 ### HTTP管道化
 
-![pipelinling](/network/pipelinling.png)
+<img :src="$withBase('network/pipelinling.png')"/>
 
 ### HTTP 连接分为长连接和短连接，而我们现在常用的都是 HTTP 1.1，因此我们用的都是长连接?。
 
