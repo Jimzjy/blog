@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# 实现
-
 ## Ajax Promise封装
 
     function fetchRequest (param) {

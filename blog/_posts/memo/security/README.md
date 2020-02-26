@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# 安全
-
 ## **XSS（Cross-Site Scripting）脚本攻击漏洞**
 
 JavaScript 代码注入, 如编写 JavaScript 代码到公共评论模块中.

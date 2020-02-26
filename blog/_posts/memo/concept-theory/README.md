@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# 概念&原理
-
 ### 渐进增强（Progressive Enhancement）
 
 向上兼容.
