@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# JS
-
 ### 多个标签页之间通信的几种方法
 
 **1.localstorage**

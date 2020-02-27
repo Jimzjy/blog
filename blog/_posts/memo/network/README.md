@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# 网络相关
-
 ### **http状态码301和302**
 
 301 redirect: 301 代表永久性转移(Permanently Moved)

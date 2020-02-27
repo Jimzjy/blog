@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# Node.js
-
 ## EventLoop
 
 <img :src="$withBase('/node/event-loop.png')"/>

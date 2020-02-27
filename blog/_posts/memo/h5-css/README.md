@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# H5&CSS
-
 ### link 和 @import 的区别
 
 1.@import是 CSS 提供的语法规则，只有导入样式表的作用；link是HTML提供的标签，不仅可以加载 CSS 文件，还可以定义 RSS、rel 连接属性等.
