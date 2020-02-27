@@ -4,8 +4,6 @@ tags:
   - memo
 ---
 
-# webpack
-
 ## webpack工作原理
 
 <img :src="$withBase('/webpack/theory.png')"/>
