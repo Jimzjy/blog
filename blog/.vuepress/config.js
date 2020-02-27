@@ -26,7 +26,7 @@ module.exports = {
       ],      
       copyright: [
         {
-          text: '摸鱼中🐟...',
+          text: 'Touching fish in progress...',
           link: '',
         },
       ],

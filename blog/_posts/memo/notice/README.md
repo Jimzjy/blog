@@ -1,5 +1,5 @@
 ---
-title: notice
+title: Notice
 tags: 
   - memo
 ---
