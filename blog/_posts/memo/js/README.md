@@ -117,6 +117,7 @@ bind() 生成的没有 prototype (所以不会影响原来的 function), new 它
 - 箭头函数中，根据外层上下文绑定的 `this` 决定 `this` 指向。
 
 非严格模式下的 bind call apply 会把 undefined, null 这些context转成全局对象(window, global)
+<img :src="$withBase('/js/bind.jpg')"/>
 
 ### JavaScript 执行
 
