@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Jimzjy',
-  theme: '@vuepress/theme-blog',
+  // theme: '@vuepress/theme-blog',
   base: '/blog/',
   themeConfig: {
     nav: [
