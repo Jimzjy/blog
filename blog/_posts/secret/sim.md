@@ -7,8 +7,9 @@ secret: true
 tags: 
   - secret
 ---
-...
+
 ### 20200309
+<img :src="$withBase('/secret/sim/201584157424.jpg')" class="img-s" />
 <img :src="$withBase('/secret/sim/221583766906.jpg')" class="img-s" />
 
 ### 20200109
