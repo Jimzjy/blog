@@ -311,11 +311,13 @@ Maximum Segment Lifetime, 他是任何报文在网络上存在的最长时间，
 
 **GET**
 
-没有副作用被称为“幂等“（Idempotent), 因为GET因为是读取，就可以对GET请求的数据做缓存。这个缓存可以做到浏览器本身上（彻底避免浏览器发请求），也可以做到代理上（如nginx），或者做到server端（用Etag，至少可以减少带宽消耗）
+没有副作用被称为“幂等“（Idempotent), 因为GET因为是读取，就可以对GET请求的数据做缓存。这个缓存可以做到浏览器本身上（彻底避免浏览器发请求），也可以做到代理上（如nginx），或者做到server端（用Etag，至少可以减少带宽消耗）  
+TCP 请求只发一次
 
 **POST**
 
-有副作用的，不幂等的, 不能缓存, https可以加密隐藏数据, GET的参数只能支持ASCII，而POST能支持任意binary
+有副作用的，不幂等的, 不能缓存, https可以加密隐藏数据, GET的参数只能支持ASCII，而POST能支持任意binary.  
+TCP 请求发送两次 (第一次 header, 第二次 body, firefox只发送一次)
 
 ### URI VS URL
 

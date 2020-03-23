@@ -304,6 +304,31 @@ object 类型又具体包含了 function、array、date 等。
     console.log(+object1);
     // expected output: 42
 
+#### bigInt
+https://mp.weixin.qq.com/s/_jfA25-daJUaY2uIcSeNDg
+
+1. 在整数字面量后面加n。
+```js
+var bigIntNum = 9007199254740993n;
+```
+2. 使用 BigInt 函数。
+```js
+var bigIntNum = BigInt(9007199254740);
+var anOtherBigIntNum = BigInt('9007199254740993');
+```
+3. 通过 BigInt， 我们可以安全的进行大数整型计算。
+```js
+var bigNumRet = 9007199254740993n + 9007199254740993n; // -> -> 18014398509481986n
+
+bigNumRet.toString(); // -> '18014398509481986'
+```
+注意:
+1. BigInt 是一种新的数据原始（primitive）类型。
+```js
+typeof 9007199254740993n; // -> 'bigint'
+```
+2. 尽可能避免通过调用函数 BigInt 方式来实例化超大整型。因为参数的字面量实际也是 Number 类型的一次实例化，超出安全范围的数字，可能会引起精度丢失。
+
 ### Promise
 
     function Promise(executor) {
@@ -696,8 +721,9 @@ Array.from()
     }
 
 ### Proxy
-
-支持13种拦截操作
+支持13种拦截操作 
+要注意的点: this 
+https://zh.javascript.info/proxy
 
 - **get(target, propKey, receiver)**：拦截对象属性的读取，比如`proxy.foo`和`proxy['foo']`。
 - **set(target, propKey, value, receiver)**：拦截对象属性的设置，比如`proxy.foo = v`或`proxy['foo'] = v`，返回一个布尔值。
@@ -813,4 +839,12 @@ console.log(a)
 // 10
 // 0
 // 0
+```
+
+### 类私有变量
+#开头
+```js
+class Person {
+  #name = '111'
+}
 ```
