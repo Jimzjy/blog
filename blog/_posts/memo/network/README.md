@@ -453,3 +453,13 @@ TCP的拥塞控制算法包括了慢启动 拥塞避免 快速重传 快速恢�
                 </param>
             </params>
         </methodCall>
+
+### SameSite
+http://www.ruanyifeng.com/blog/2019/09/cookie-samesite.html
+`Strict`: 完全禁止第三方 Cookie，跨站点时，任何情况下都不会发送 Cookie。换言之，只有当前网页的 URL 与请求目标一致，才会带上 Cookie.  
+`Lax`: 大多数情况也是不发送第三方 Cookie，但是导航到目标网址的 Get 请求除外.
+<img :src="$withBase('network/samesite-lax.png')"/>
+
+`None`: 不限制
+
+关闭: SameSite=None; Secure
